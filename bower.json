@@ -1,0 +1,7 @@
+{
+  "name": "robrez-typography#gh-pages",
+  "private": true,
+  "dependencies": {
+    "robrez-typography": "robrez/robrez-typography#master"
+  }
+}

@@ -1,0 +1,75 @@
+<!--
+    @license
+    Copyright (c) 2015 Rob Resendez. All rights reserved.
+    This code may only be used under the license found at http://github.com/robrez/robrez-typography
+-->
+<!--
+`robrez-typography` is an element that uses `core-style` to utilize
+typography from the Material Design specification.
+(See http://www.google.com/design/spec/style/typography.html).
+
+Example:
+
+    <robrez-typography>
+      <div class="rt-display4">Display4</div>
+      <div class="rt-body">body stuff</div>
+    </robrez-typography>
+
+It is also possible to use the core-style producer directly,
+without wrapping content in a `robrez-typography` element.
+`robrez-typography-style` contains all of the classes.
+
+Example:
+    <link href="robrez-typography-style.html" rel="import">
+
+    <polymer-element name="my-component">
+      <template>
+        <core-style ref="robrez-typography"></core-style>
+        <div class="rt-light">
+          <div class="rt-display4">Display4</div>
+          <div class="rt-body">body stuff</div>
+        </div>
+      </template>
+    </polymer-element>
+
+If you are OK with /deep/ combinators, you can also import some
+top-level css and utilize the clsses inside or outside of any
+polymer components. `robrez-typography-css` contains classes
+that use the /deep/ combinator.
+
+Example:
+    <link href="robrez-typography-css.html" rel="import">
+
+    <body>
+      <div class="rt-title">Hello</div>
+      <lorem-ipsum class="rt-body"></lorem-ipsum>
+    </body>
+
+
+@group robrez-typography
+@element robrez-typography
+@homepage github.io
+-->
+
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="robrez-typography-style.html">
+
+<polymer-element name="robrez-typography">
+
+  <template>
+    <core-style ref="robrez-typography"></core-style>
+    <style>
+       :host {
+         display: block;
+         position: relative;
+       }
+    </style>
+    <content id="content"></content>
+  </template>
+
+  <script>
+    Polymer('robrez-typography', {
+    });
+  </script>
+</polymer-element>
+

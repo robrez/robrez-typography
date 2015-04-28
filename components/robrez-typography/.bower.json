@@ -1,0 +1,38 @@
+{
+  "name": "robrez-typography",
+  "authors": [
+    "Rob Resendez <resendez.java@gmail.com>"
+  ],
+  "description": "Typography Helper for Polymer",
+  "license": "MIT",
+  "homepage": "https://github.com/robrez/robrez-typography",
+  "main": "robrez-typography.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^0.5",
+    "core-style": "Polymer/core-style#^0.5",
+    "font-roboto": "Polymer/font-roboto#^0.5"
+  },
+  "keywords": [
+    "web-components",
+    "material design",
+    "typography",
+    "robrez-typography"
+  ],
+  "_release": "7b84d0d52f",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "7b84d0d52fd77d9c7f2f451d5cbb097dc1868865"
+  },
+  "_source": "git://github.com/robrez/robrez-typography.git",
+  "_target": "master",
+  "_originalSource": "robrez/robrez-typography",
+  "_direct": true
+}

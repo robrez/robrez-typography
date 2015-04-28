@@ -1,0 +1,120 @@
+html {
+    font-family: 'RobotoDraft','Roboto','Helvetica Neue', Helvetica, Sans-Serif;
+    font-size: 100%; /*default 16px assumed*/
+    line-height: 1.5;
+}
+
+html /deep/ .rt-display4 {
+    /* light 112sp */
+    font-size: 7rem; /* 112 / 16 */
+    line-height: normal;
+    font-weight: 300;
+    letter-spacing: -.275rem;
+}
+
+html /deep/ .rt-display3 {
+    /* regular 56sp */
+    font-size: 3.5rem; /* 56 / 16 */
+    line-height: normal;
+    font-weight: 400;
+    letter-spacing: -.14rem;
+}
+
+html /deep/ .rt-display2 {
+    /* regular 45sp leading48sp */
+    font-size: 2.8125rem; /* 45 / 16 */
+    line-height: normal;
+    font-weight: 400;
+}
+
+html /deep/ .rt-display1 {
+    /* regular 34sp leading40sp */
+    font-size: 2.125rem; /* 34 / 16 */
+    line-height: normal;
+    font-weight: 400;
+}
+
+html /deep/ .rt-headline {
+    /* regular 24sp leading32sp */
+    font-size: 1.5rem; /* 24 / 16 */
+    line-height: normal;
+    font-weight: 400;
+}
+
+html /deep/ .rt-title {
+    /* medium 20sp leading?? */
+    font-size: 1.25rem; /* 20 / 16 */
+    line-height: normal;
+    font-weight: 500;
+}
+
+html /deep/ .rt-subhead {
+    /* regular 16sp leading24sp */
+    font-size: 1rem; /* 16 / 16 */
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+html /deep/ .rt-body2 {
+    /* medium 14sp leading24sp */
+    font-size: .875rem; /* 14 / 16 */
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
+html /deep/ .rt-body {
+    /* regular 14sp leading20sp */
+    font-size: .875rem; /* 14 / 16 */
+    line-height: 1.25rem;
+    font-weight: 400;
+}
+
+html /deep/ .rt-caption {
+    /* regular 12sp */
+    font-size: .75rem; /* 12 / 16 */
+    line-height: normal;
+    font-weight: 400;
+}
+
+html /deep/ .rt-button {
+    /* medium 14sp */
+    font-size: .875rem; /* 14 / 16 */
+    line-height: normal;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+html /deep/ .rt-light {
+    color: rgba(0,0,0,.87);
+}
+
+html /deep/ .rt-dark {
+    color: rgba(255,255,255,.87);
+}
+
+html /deep/ .rt-light.rt-display1,
+html /deep/ .rt-light.rt-display2,
+html /deep/ .rt-light.rt-display3,
+html /deep/ .rt-light.rt-display4,
+html /deep/ .rt-light.rt-caption,
+html /deep/ .rt-light .rt-display1,
+html /deep/ .rt-light .rt-display2,
+html /deep/ .rt-light .rt-display3,
+html /deep/ .rt-light .rt-display4,
+html /deep/ .rt-light .rt-caption {
+    color: rgba(0,0,0,.54);
+}
+
+html /deep/ .rt-dark.rt-display1,
+html /deep/ .rt-dark.rt-display2,
+html /deep/ .rt-dark.rt-display3,
+html /deep/ .rt-dark.rt-display4,
+html /deep/ .rt-dark.rt-caption,
+html /deep/ .rt-dark .rt-display1,
+html /deep/ .rt-dark .rt-display2,
+html /deep/ .rt-dark .rt-display3,
+html /deep/ .rt-dark .rt-display4,
+html /deep/ .rt-dark .rt-caption {
+    color: rgba(255,255,255,.54);
+}
+
