@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+    <meta name="mobile-web-app-capable" content="yes"></meta>
+    <script src="../../webcomponentsjs/webcomponents.min.js"></script>
+    <link rel="import" href="../../polymer/polymer.html"/>
+    <link rel="import" href="../robrez-typography-css.html">
+    <style>
+      body {
+         border: 0;
+         margin: 0;
+         padding: 0;
+         background-color: #f9f9f9;
+      }
+      #header {
+         width: 100%;
+         background-color: #E91E63;
+         min-height: 56px;
+      }
+      .appTitle {
+         color: #FFF;
+         padding-left: 20px;
+         font-size: 40px;
+      }
+      .fontInfo {
+         margin-top: 10px;
+      }
+      .sectionInfo {
+         margin: 40px 0 20px 0;
+      }
+      .sectionTitle {
+         padding-left: 8px;
+         border-left: solid 2px #C2185B;
+         color: #C2185B;
+      }
+      .card {
+         background-color: #fff;
+         padding: 16px;
+      }
+      #content {
+         padding: 0 40px 40px 40px;
+      }
+      .myStyleWins {
+         color: yellow;
+      }
+    </style>
+
+  </head>
+ 
+  <body unresolved>
+
+    <div id="header" layout horizontal center>
+      <div class="rt-title appTitle">robrez-typography</div>
+    </div>
+
+    <div class="section">
+      <div id="content">
+        <div class="rt-grid sectionInfo">
+          <div class="rt-display1 rt-nocolor sectionTitle col m40 s100">Typography</div>
+          <div class="fontInfo col m60 s100">
+            <div class="rt-body">
+              Typography style can be applied either by:
+              <div class="card">
+                A core-style producer referenced by your component (<a href="../demo.html">Demo</a>)
+              </div>
+              or
+              <div class="card">
+                A top-level stylesheet using /deep/ combinators (<a href="./deepCombDemo.html">Demo</a>)
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

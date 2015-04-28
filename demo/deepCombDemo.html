@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- just like the other demo except top-level css import is used -->
+<!-- instead of a core-style                                      -->
+<html>
+  <head>
+    <meta charset="utf-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+    <meta name="mobile-web-app-capable" content="yes"></meta>
+    <script src="../../webcomponentsjs/webcomponents.min.js"></script>
+    <link rel="import" href="../../polymer/polymer.html"/>
+    <link rel="import" href="../robrez-typography-css.html"/>
+    <style>
+      body {
+         border: 0;
+         margin: 0;
+         padding: 0;
+      }
+      #header {
+         width: 100%;
+         background-color: #00BCD4;
+         min-height: 56px;
+      }
+      .appTitle {
+         color: #FFF;
+         padding-left: 20px;
+         font-size: 40px;
+      }
+    </style>
+
+  </head>
+ 
+  <body unresolved>
+
+    <div id="header" layout horizontal center>
+      <div class="rt-title appTitle">robrez-typography</div>
+    </div>
+
+    <demo-typography layout vertical flex class="section"></demo-typography>
+
+  </body>
+</html>
+
+<polymer-element name="demo-typography" attributes="">
+  <template>
+    <style>
+      :host {
+         background-color: #f9f9f9;
+      }
+      .fontInfo {
+         margin-top: 10px;
+      }
+      .sectionInfo {
+         margin: 40px 0 20px 0;
+      }
+      .sectionTitle {
+         padding-left: 8px;
+         border-left: solid 2px #00BCD4;
+         color: #00BCD4;
+      }
+      .card {
+         background-color: #fff;
+         padding: 16px;
+      }
+      #content {
+         padding: 0 40px 40px 40px;
+      }
+      .dark {
+         background-color: #00BCD4;
+      }
+    </style>
+
+  <div id="content">
+      <div class="rt-grid sectionInfo">
+        <div class="rt-display1 rt-nocolor sectionTitle col s40 xs100">/deep/ combinator</div>
+        <div class="fontInfo col s60 xs100">
+          <div class="rt-body">
+            Depending on your preference, you may opt to use a top-level stylesheet import and skip the core-style approach completely
+          </div>
+        </div>
+      </div>
+      <div class="card shadow1 rt-light">
+        <template repeat="{{font, idx in data}}">
+          <div class="rt-grid fontInfo">
+            <div class="col s100 m20">
+              <div class="rt-caption">.{{font.class}}</div>
+            </div>
+            <div class="col s100 m80">
+              <div class="{{font.class}}">Black {{font.opacity}}%</div>
+            </div>
+          </div>
+        </template>
+      </div>
+
+  </div>
+
+  </template>
+  <script>
+    Polymer('demo-typography', {
+
+      created: function() {
+        this.data = [
+            { class: "rt-display4", size: "Light 112sp", opacity: "54" },
+            { class: "rt-display3", size: "Regular 56sp", opacity: "54" },
+            { class: "rt-display2", size: "Regular 45sp", opacity: "54" },
+            { class: "rt-display1", size: "Regular 34sp", opacity: "54" },
+            { class: "rt-headline", size: "Regular 24sp", opacity: "87" },
+            { class: "rt-title", size: "Medium 20sp Tracking 5", opacity: "87" },
+            { class: "rt-subhead", size: "Regular 16sp", opacity: "87" },
+            { class: "rt-body2", size: "Medium 14sp", opacity: "87" },
+            { class: "rt-body", size: "Regular 14sp", opacity: "87" },
+            { class: "rt-caption", size: "Regular 12sp", opacity: "54" },
+            { class: "rt-button", size: "MEDIUM 14SP, CAPS", opacity: "87" }
+        ];
+      }
+
+    });
+  </script>
+</polymer-element>
+
